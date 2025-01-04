@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-section">
+            <div class="header"><h3>Desserts</h3></div>
+            <div class="product-display">
+                <div class="each-product">
+                    <img  alt="" class="product-image">
+                    <p class="product-name">Waffle</p>
+                    <p class="product-details">Waffle with Berries</p>
+                    <p class="price">$6.50</p>
+                    <div class="buttons">
+                        <button class="btn-1"><img src="icon-add-to-cart.svg" alt=""><p>Add to Cart</p></button>
+                        <button class="btn-2"><img src="icon-increment-quantity.svg" id="plus" alt=""><input type="text" id="input"><img src="icon-decrement-quantity.svg" class="minus" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-container">
+            <h4 id="header">Your Cart(0)</h4>
+            <div class="empty-cart">
+                <div class="img">
+                    <img src="illustration-empty-cart.svg" alt="">
+                    <p>Your added items will appear here</p>
+                </div>
+            </div>
+            <div class="carts">
+                <div class="added-cart">
+                    <div>
+                        <p class="cartProductName">Classic Tiramisu</p>
+                        <div class="cartProductPriceUnit">
+                            <p class="cartProductUnit">x</p>
+                            <p class="cartProductPrice">@$5.50</p>
+                            <p class="cartProductAmount">$5.50</p>
+                        </div>
+                    </div>
+                    <div class="icon-remove"><img src="icon-remove-item.svg" alt=""></div>
+                </div>
+                <div class="cart-list"></div>
+            </div>
+            <div class="total-button">
+                <div class="total">
+                    <p>Order total</p>
+                    <h3>$0.00</h3>
+                </div>
+                <div class="btn">
+                    <button class="carbon-neutral"><img src="icon-carbon-neutral.svg" alt=""><p>This is <strong>carbon neutral</strong> delivery</p></button>
+                    <button class="submit">Confirm Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overLay"></div>
+    <div class="last-page" id="last-page">
+        <div class="order-confirmed">
+            <div class="head-section">
+                <img src="icon-order-confirmed.svg" alt="">
+                <h2>Order Comfirmed</h2>
+                <p>We hope you enjoyed your food!</p>
+            </div>
+            <div class="maining">   
+                <div class="main">
+                    <img src="image-baklava-desktop.jpg" alt="IMG" id="img">
+                    <div class="order-details">
+                        <div class="order-name">
+                            <p class="cartProductName">Classic Tiramisu</p>
+                            <div class="order-price">
+                                <p class="order-unit">1x</p>
+                                <p class="order-prices">@$5.50</p>
+                            </div>
+                        </div>
+                        <div class="order-amount">
+                            <p class="order-amounts">$0.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-list"></div>
+                <div class="total-order">
+                    <p>Order Total</p>
+                    <h3>$5.50</h3>
+                </div>
+            </div>
+            <div class="confirm-order">
+                <button id="btn3">Start New Order</button>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
