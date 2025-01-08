@@ -409,6 +409,7 @@ body {
         left: 2%;
         right: 2%;
         padding: 20px;
+        top: 60%
     }
 }
 
@@ -431,6 +432,7 @@ body {
     .order-confirmed {
         width: 400px;
         padding: 20px;
+        top: 70%;
     }
 }
 
@@ -442,6 +444,7 @@ body {
     .order-confirmed {
             width: 350px;
             padding: 10px 8px;
+            top: 90%;
         }
 
     .each-product{
